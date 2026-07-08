@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@200..700&display=swap');
+
+.ramka {
+    width: 119px;
+    height: 119px;;
+    position: absolute;
+    z-index: 1;
+    top: 353px;
+    left: -60px;
+    border-radius: 86px;
+    border: 10px solid white;
+    z-index: 2;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    background: red;
+    position: relative;
+    z-index: 1;
+    top: 362px;
+    left: -50px;
+    // top: 353px;
+    // left: -60px;
+    border-radius: 86px;
+    // border: 10px solid white;
+    // &:hover {
+    //     border-top-color: black;
+    // }
+    & p {
+        margin: 0;
+        width: 53px;
+        position: relative;
+        left: 57px;
+        top: 29px;
+        font-size: 20px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+    }
+    // & p::before {
+    //     content: '';
+    //     position: absolute;
+    //     width: 100px;
+    //     background: black;
+    //     height: 130%;
+
+    // }
+}
+
+.efect {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+.efecttext {
+    color: black;
+}
+
+// .text {
+//     margin: 0;
+//     width: 53px;
+//     position: relative;
+//     left: 8px;
+//     top: 253px;
+//     font-size: 20px;
+//     font-family: "Oswald", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 700;
+//     font-style: normal;
+//     color: white;
+//     z-index: 1;
+//     &:hover {
+//         color: #000;
+//     }
+// }

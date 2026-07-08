@@ -25,6 +25,7 @@
   border-right: 4px dotted red;
   padding-right: 20px;
   color: red;
+  transition-duration: 500ms;
 }
 .Header div p:hover {
   color: blue;
