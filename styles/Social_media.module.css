@@ -1,14 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@200..700&display=swap");
+.iconX div div:nth-child(2), .iconX div div:nth-child(1), .iconX div, .iconX, .icon, .ramkaX, .ramka {
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+
 .ramka {
   width: 119px;
   height: 119px;
   position: fixed;
-  z-index: 1;
   top: 353px;
   left: -60px;
   border-radius: 86px;
   border: 10px solid white;
   z-index: 2;
+  cursor: pointer;
+}
+
+.ramkaX {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  top: 362px;
+  left: -50px;
+  border: none;
+  border-radius: 86px;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .icon {
@@ -27,7 +44,7 @@
   position: relative;
   left: 55px;
   top: 29px;
-  font-size: 20px;
+  font-size: 21px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -35,13 +52,62 @@
   color: white;
 }
 .icon p.efecttext {
-  animation: textsize 1s ease infinite alternate 0s;
+  animation: textsize 1s ease infinite alternate-reverse 0s;
+}
+
+.iconX {
+  width: 90px;
+  height: 90px;
+  background: red;
+  position: fixed;
+  z-index: 1;
+  top: 362px;
+  left: -50px;
+  border-radius: 86px;
+}
+.iconX div {
+  width: 90px;
+  height: 90px;
+  border-radius: 80px;
+}
+.iconX div div:nth-child(1) {
+  width: 35px;
+  height: 5px;
+  background: white;
+  position: relative;
+  left: 49px;
+  top: 41px;
+  transform: rotate(45deg);
+  border-radius: 5px;
+}
+.iconX div div:nth-child(2) {
+  width: 35px;
+  height: 5px;
+  background: white;
+  position: relative;
+  left: 49px;
+  top: 37px;
+  transform: rotate(-45deg);
+  border-radius: 5px;
 }
 
 .efect {
   border-top-color: rgb(254, 107, 107);
   border-bottom-color: #ffaaaa;
   animation: border 2s linear infinite normal 0s;
+}
+
+.knopka_X {
+  margin: 0;
+  width: 53px;
+  position: relative;
+  left: 55px;
+  top: 29px;
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @keyframes border {
@@ -54,9 +120,9 @@
 }
 @keyframes textsize {
   0% {
-    font-size: 18px;
+    font-size: 17px;
   }
   100% {
-    font-size: 22px;
+    font-size: 21px;
   }
 }/*# sourceMappingURL=Social_media.module.css.map */
