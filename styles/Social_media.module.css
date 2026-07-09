@@ -2,7 +2,7 @@
 .ramka {
   width: 119px;
   height: 119px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 353px;
   left: -60px;
@@ -15,7 +15,7 @@
   width: 120px;
   height: 120px;
   background: red;
-  position: relative;
+  position: fixed;
   z-index: 1;
   top: 362px;
   left: -50px;
@@ -25,7 +25,7 @@
   margin: 0;
   width: 53px;
   position: relative;
-  left: 57px;
+  left: 55px;
   top: 29px;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
@@ -34,12 +34,29 @@
   font-style: normal;
   color: white;
 }
-
-.efect {
-  border-top-color: black;
-  border-bottom-color: black;
+.icon p.efecttext {
+  animation: textsize 1s ease infinite alternate 0s;
 }
 
-.efecttext {
-  color: black;
+.efect {
+  border-top-color: rgb(254, 107, 107);
+  border-bottom-color: #ffaaaa;
+  animation: border 2s linear infinite normal 0s;
+}
+
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes textsize {
+  0% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 22px;
+  }
 }/*# sourceMappingURL=Social_media.module.css.map */

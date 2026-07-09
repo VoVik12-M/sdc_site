@@ -17,7 +17,7 @@ export default function Social_media () {
             }}
             onMouseLeave={() => {
                 efectu.current?.classList.remove(styles.efect)
-                // efectu2.current?.classList.remove(styles.efecttext)
+                efectu2.current?.classList.remove(styles.efecttext)
             }}>
             </div>
             <div className={styles.icon}>
