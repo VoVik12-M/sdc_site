@@ -8,7 +8,9 @@
     z-index: 1;
     width: 100%;
     height: 100px;
-    margin-top: 10px;
+    background-color: transparent;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
     & div {
         display: flex;
         flex-direction: row;
@@ -51,15 +53,58 @@
     grid-area: three;
 }
 
+.headerScroll {
+    background-color: white;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+//______________________________________Мобільна версія______________________________
+
 .Header_Phone {
     display: none;
-    background: red;
-    height: 20px;
+    justify-content: space-between;
+    background: white;
+    height: 50px;
     position: fixed;
     z-index: 1;
     width: 100%;
-    
+    box-sizing: border-box;
+    padding: 5px;
 }
+
+.soc {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.hamMenu {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    & span {
+        height: 5px;
+        width: 100%;
+        background: red;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+    & span:nth-of-type(1) {
+        top: 25%;
+    }
+    & span:nth-of-type(2) {
+        top: 50%;
+    }
+    & span:nth-of-type(3) {
+        top: 75%;
+    }
+}
+
+// //______________________________________Верстка______________________________
 
 @media(max-width: 810px) {
     .Header {
@@ -80,6 +125,10 @@
 
 @media(max-width: 680px) {
     .Header {
+        display: none;
+    }
+
+    .headerScroll {
         display: none;
     }
     

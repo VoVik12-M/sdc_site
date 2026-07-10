@@ -1,11 +1,30 @@
 "use client";
 
 import styles from "../styles/Header.module.css";
+import { useRef, useState, useEffect } from "react";
 
 export default function Header () {
+
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 1) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div>
-            <div className={styles.Header}>
+            <div className={`${styles.Header} ${scrolled ? styles.headerScroll : ""}`}>
                 <div className={styles.row_1}>
                     <p>Про нас</p>
                     <p>Педагоги</p>
@@ -19,7 +38,13 @@ export default function Header () {
                 </div>
             </div>
             <div className={styles.Header_Phone}>
-
+                <nav className={styles.soc}></nav>
+                <img className={styles.row_2} src="/Logotup.png" alt="" />
+                <div className={styles.hamMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
         
