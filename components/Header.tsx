@@ -5,7 +5,9 @@ import { useRef, useState, useEffect } from "react";
 
 export default function Header () {
 
-    const [scrolled, setScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState<boolean>(false);
+    const[knopka, setKnopka] = useState<boolean>(false);
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 1) {
@@ -40,7 +42,7 @@ export default function Header () {
             <div className={styles.Header_Phone}>
                 <nav className={styles.soc}></nav>
                 <img className={styles.row_2} src="/Logotup.png" alt="" />
-                <div className={styles.hamMenu}>
+                <div className={`${styles.hamMenu} ${knopka ? styles.active : ''}`} onClick={() => setKnopka(prev => !prev)}>
                     <span></span>
                     <span></span>
                     <span></span>
