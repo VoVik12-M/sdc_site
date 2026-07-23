@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@200..700&display=swap");
+.menu p, .Header div p {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .Header {
   display: flex;
   flex-direction: row;
@@ -19,10 +26,6 @@
 }
 .Header div p {
   margin: 0 12px;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
   font-size: 26px;
   border-right: 4px dotted red;
   padding-right: 20px;
@@ -106,6 +109,28 @@
 }
 .hamMenu span:nth-of-type(3) {
   top: 75%;
+}
+
+.menu {
+  position: absolute;
+  z-index: -1;
+  top: -360px;
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  transition-duration: 300ms;
+}
+.menu p {
+  font-size: 24px;
+  margin: 2px 0;
+  text-align: center;
+  background: white;
+  color: red;
+  padding: 10px 0;
+}
+
+.menu_ef {
+  top: 57px;
 }
 
 @media (max-width: 810px) {

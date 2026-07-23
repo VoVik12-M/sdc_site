@@ -48,7 +48,7 @@ export default function Header () {
                     <span></span>
                     <span></span>
                 </div>
-                <nav>
+                <nav className={`${styles.menu} ${knopka ? styles.menu_ef : ''}`}>
                     <p>Про нас</p>
                     <p>Педагоги</p>
                     <p>Стилі</p>
