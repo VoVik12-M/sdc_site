@@ -2,6 +2,7 @@
 
 import styles from "../styles/Header.module.css";
 import { useRef, useState, useEffect } from "react";
+import Social_media_phone from "./Social_media_phone";
 
 export default function Header () {
 
@@ -40,13 +41,21 @@ export default function Header () {
                 </div>
             </div>
             <div className={styles.Header_Phone}>
-                <nav className={styles.soc}></nav>
+                <Social_media_phone />
                 <img className={styles.row_2} src="/Logotup.png" alt="" />
                 <div className={`${styles.hamMenu} ${knopka ? styles.active : ''}`} onClick={() => setKnopka(prev => !prev)}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+                <nav>
+                    <p>Про нас</p>
+                    <p>Педагоги</p>
+                    <p>Стилі</p>
+                    <p>Ціни</p>
+                    <p>Розклад</p>
+                    <p>Блог</p>
+                </nav>
             </div>
         </div>
         
