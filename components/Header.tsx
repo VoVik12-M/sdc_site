@@ -3,11 +3,19 @@
 import styles from "../styles/Header.module.css";
 import { useRef, useState, useEffect } from "react";
 import Social_media_phone from "./Social_media_phone";
+import { Dispatch, SetStateAction } from "react";
 
-export default function Header () {
+interface pageProps {
+    knopka: boolean;
+    setKnopka: Dispatch<SetStateAction<boolean>>;
+    meregi: boolean;
+    setMeregi: Dispatch<SetStateAction<boolean>>;
+}
+
+export default function Header ({setKnopka, knopka, setMeregi, meregi}: pageProps) {
 
     const [scrolled, setScrolled] = useState<boolean>(false);
-    const[knopka, setKnopka] = useState<boolean>(false);
+    // const[knopka, setKnopka] = useState<boolean>(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -41,9 +49,12 @@ export default function Header () {
                 </div>
             </div>
             <div className={styles.Header_Phone}>
-                <Social_media_phone />
+                <Social_media_phone setMeregi={setMeregi} meregi={meregi} setKnopka={setKnopka}/>
                 <img className={styles.row_2} src="/Logotup.png" alt="" />
-                <div className={`${styles.hamMenu} ${knopka ? styles.active : ''}`} onClick={() => setKnopka(prev => !prev)}>
+                <div className={`${styles.hamMenu} ${knopka ? styles.active : ''}`} onClick={() => {
+                    setKnopka(prev => !prev);
+                    setMeregi(false);
+                    }}>
                     <span></span>
                     <span></span>
                     <span></span>

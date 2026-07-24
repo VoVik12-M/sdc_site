@@ -2,13 +2,23 @@
 
 import styles from "../styles/Social_media_phone.module.css"
 import { useRef, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
-export default function Social_media_phone () {
+interface PhoneProps {
+    meregi: boolean;
+    setMeregi: Dispatch<SetStateAction<boolean>>;
+    setKnopka: Dispatch<SetStateAction<boolean>>;
+}
 
-    const[meregi, setMeregi] = useState<boolean>(false);
+export default function Social_media_phone ({setMeregi, meregi, setKnopka}: PhoneProps) {
+
+    // const[meregi, setMeregi] = useState<boolean>(false);
 
     return (
-        <nav className={styles.soc} onClick={() => setMeregi(prev =>!prev)}>
+        <nav className={styles.soc} onClick={() => {
+            setMeregi(prev =>!prev);
+            setKnopka(false);
+            }}>
             {!meregi ? <p>Social Media</p> :
                 <div className={styles.ikc}>
                     <div></div>

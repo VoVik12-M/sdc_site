@@ -9,6 +9,8 @@ import { useRef, useState, useEffect } from "react";
 export default function Home() {
 
   const [width, setWidth] = useState<number>(0);
+  const[knopka, setKnopka] = useState<boolean>(false);
+  const[meregi, setMeregi] = useState<boolean>(false);
 
   useEffect(() => {
       const handleResize = () => {
@@ -26,7 +28,7 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
+      <Header setKnopka ={setKnopka} knopka = {knopka} setMeregi={setMeregi} meregi={meregi}/>
       <video src="/video-fon.mp4" autoPlay muted loop ></video>
       {width > 680 ? <Social_media /> : '' }
       
