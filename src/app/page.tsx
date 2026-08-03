@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
+
 import Header from "../../components/Header";
 import Social_media from "../../components/Social_media";
+import Nowunu from "../../components/Nowunu";
+
 import { useRef, useState, useEffect } from "react";
 
 export default function Home() {
@@ -31,7 +34,7 @@ export default function Home() {
       <Header setKnopka ={setKnopka} knopka = {knopka} setMeregi={setMeregi} meregi={meregi}/>
       <video src="/video-fon.mp4" autoPlay muted loop ></video>
       {width > 680 ? <Social_media /> : '' }
-      
+      <Nowunu />
     </div>
   );
 }
