@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
+
+%shruft {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%shruft2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%shruft3 {
+    font-family: "Climate Crisis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YEAR" 1979;
+}
+
+.youtube {
+    border-top: 9px dashed red;
+    background: #e1f4ff;
+    box-sizing: border-box;
+    padding: 10px;
+    & p {
+        text-align: center;
+        margin: 10 0;
+    }
+    & p:nth-child(1) {
+        @extend %shruft2;
+        font-size: 20px;
+        color: red;
+    }
+    & p:nth-child(2) {
+        @extend %shruft;
+        color: rgb(184, 9, 9);
+        font-size: 47px;
+        margin: 30px 0;
+    }
+}
+
+.vid {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    & h1 {
+        @extend %shruft3;
+        text-align: center;
+        margin: 10px 0;
+    }
+    & >div {
+        margin: 0 10px 0 10px;
+    }
+    & div iframe {
+        width: 270px;
+        height: 360px;
+    }
+}

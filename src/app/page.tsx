@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import Header from "../../components/Header";
 import Social_media from "../../components/Social_media";
 import Nowunu from "../../components/Nowunu";
+import Youtube from "../../components/Youtube";
 
 import { useRef, useState, useEffect } from "react";
 
@@ -35,6 +36,7 @@ export default function Home() {
       <video src="/video-fon.mp4" autoPlay muted loop ></video>
       {width > 680 ? <Social_media /> : '' }
       <Nowunu />
+      <Youtube />
     </div>
   );
 }
