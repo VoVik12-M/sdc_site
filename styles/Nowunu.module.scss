@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+%shruft {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.New {
+    box-sizing: border-box;
+    background: #d3ffff;
+    padding: 10px;
+    border-top: 9px dashed red;
+    margin: -4px 0 0 0;
+    & p {
+        text-align: center;
+        font-size: 26px;
+        margin: 20px 0;
+        @extend %shruft;
+        color: red
+    }
+}
+
+.Novunu {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    & div {
+        cursor: pointer;
+        width: 230px;
+        height: 250px;
+        margin: 10px;
+        &:hover {
+            transform: scale(1.1,1.1);
+        }
+    }
+    & div:nth-child(1) {
+        background: url(/Screenshot_1.png) center / contain no-repeat;
+    }
+    & div:nth-child(2) {
+        background: url(/Screenshot_2.png) center / contain no-repeat;
+    }
+    & div:nth-child(3) {
+        background: url(/Screenshot_3.png) center / contain no-repeat;
+    }
+    & div:nth-child(4) {
+        background: url(/Screenshot_4.png) center / contain no-repeat;
+    }
+    & div:nth-child(5) {
+        background: url(/Screenshot_5.png) center / contain no-repeat;
+    }
+}
+
+.Acvhii {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    & div {
+        cursor: pointer;
+        width: 230px;
+        height: 250px;
+        margin: 10px;
+        &:hover {
+            transform: scale(1.1,1.1);
+        }
+    }
+    & div:nth-child(1) {
+        background: url(/Screenshot_6.png) center / contain no-repeat;
+    }
+}
