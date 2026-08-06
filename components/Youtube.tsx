@@ -6,7 +6,7 @@ export default function Youtube() {
     return (
         <nav className={styles.youtube}>
             <p>Наші стилі танців</p>
-            <p>соціальні латиноамериканські танці</p>
+            <p>соціальні латино американські танці</p>
             <div className={styles.vid}>
                 <div>
                     <h1>Бачата</h1>

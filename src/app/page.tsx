@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Social_media from "../../components/Social_media";
 import Nowunu from "../../components/Nowunu";
 import Youtube from "../../components/Youtube";
+import Contactu from "../../components/Contactu";
 
 import { useRef, useState, useEffect } from "react";
 
@@ -37,6 +38,7 @@ export default function Home() {
       {width > 680 ? <Social_media /> : '' }
       <Nowunu />
       <Youtube />
+      <Contactu />
     </div>
   );
 }
