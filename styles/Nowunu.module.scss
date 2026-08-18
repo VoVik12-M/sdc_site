@@ -12,12 +12,17 @@
     padding: 10px;
     border-top: 9px dashed red;
     margin: -4px 0 0 0;
-    & p {
+    & >p {
         text-align: center;
         font-size: 26px;
         margin: 20px 0;
         @extend %shruft;
         color: red
+    }
+    & h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
     }
 }
 
@@ -32,6 +37,9 @@
         margin: 10px;
         &:hover {
             transform: scale(1.1,1.1);
+        }
+        &.activeNews:hover {
+            transform: none;
         }
     }
     & div:nth-child(1) {
@@ -63,8 +71,51 @@
         &:hover {
             transform: scale(1.1,1.1);
         }
+        &.activeAct:hover {
+            transform: none;
+        }
     }
     & div:nth-child(1) {
         background: url(/Screenshot_6.png) center / contain no-repeat;
+    }
+}
+
+.new {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    background: #fff6f6c9;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    bottom: 0;
+    z-index: 2;
+    & p {
+        width: 650px;
+        background: white;
+        margin: 0;
+        padding: 18px;
+    }
+};
+
+.del {
+    display: none;
+};
+
+// _______________верстка_______________
+
+@media (max-width: 685px) {
+    .new {
+        width: 100%;
+            & img {
+                width: 100%;
+            }
+            & p {
+                width: 97%;
+        }
     }
 }

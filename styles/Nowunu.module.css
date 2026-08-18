@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
-.New p {
+.New > p {
   font-family: "Rubik Doodle Shadow", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -12,11 +12,16 @@
   border-top: 9px dashed red;
   margin: -4px 0 0 0;
 }
-.New p {
+.New > p {
   text-align: center;
   font-size: 26px;
   margin: 20px 0;
   color: red;
+}
+.New h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .Novunu {
@@ -32,6 +37,9 @@
 }
 .Novunu div:hover {
   transform: scale(1.1, 1.1);
+}
+.Novunu div.activeNews:hover {
+  transform: none;
 }
 .Novunu div:nth-child(1) {
   background: url(/Screenshot_1.png) center/contain no-repeat;
@@ -63,6 +71,47 @@
 .Acvhii div:hover {
   transform: scale(1.1, 1.1);
 }
+.Acvhii div.activeAct:hover {
+  transform: none;
+}
 .Acvhii div:nth-child(1) {
   background: url(/Screenshot_6.png) center/contain no-repeat;
+}
+
+.new {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  background: rgba(255, 246, 246, 0.7882352941);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  bottom: 0;
+  z-index: 2;
+}
+.new p {
+  width: 650px;
+  background: white;
+  margin: 0;
+  padding: 18px;
+}
+
+.del {
+  display: none;
+}
+
+@media (max-width: 685px) {
+  .new {
+    width: 100%;
+  }
+  .new img {
+    width: 100%;
+  }
+  .new p {
+    width: 97%;
+  }
 }/*# sourceMappingURL=Nowunu.module.css.map */
