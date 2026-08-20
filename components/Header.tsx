@@ -4,6 +4,7 @@ import styles from "../styles/Header.module.css";
 import { useRef, useState, useEffect } from "react";
 import Social_media_phone from "./Social_media_phone";
 import { Dispatch, SetStateAction } from "react";
+import Link from "next/link";
 
 interface pageProps {
     knopka: boolean;
@@ -37,15 +38,29 @@ export default function Header ({setKnopka, knopka, setMeregi, meregi}: pageProp
         <div>
             <div className={`${styles.Header} ${scrolled ? styles.headerScroll : ""}`}>
                 <div className={styles.row_1}>
-                    <p>Про нас</p>
-                    <p>Педагоги</p>
-                    <p>Стилі</p>
+                    <Link href='/pro-nas'>
+                        <p>Про нас</p>
+                    </Link>
+                    <Link href='/teacher'>
+                        <p>Педагоги</p>
+                    </Link>
+                    <Link href='/stuli'>
+                        <p>Стилі</p>
+                    </Link>
                 </div>
-                <img className={styles.row_2} src="/Logotup.png" alt="" />
+                <Link href='/'>
+                    <img className={styles.row_2} src="/Logotup.png" alt="" />
+                </Link>
                 <div className={styles.row_3}>
-                    <p>Ціни</p>
-                    <p>Розклад</p>
-                    <p>Блог</p>
+                    <Link href='/price'>
+                        <p>Ціни</p>
+                    </Link>
+                    <Link href='/rozklad'>
+                        <p>Розклад</p>
+                    </Link>
+                    <Link href='/blogu'>
+                        <p>Блог</p>
+                    </Link>
                 </div>
             </div>
             <div className={styles.Header_Phone}>

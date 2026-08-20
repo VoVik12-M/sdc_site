@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 body {
   margin: 0;
 }
@@ -9,4 +10,8 @@ video {
   position: relative;
   top: 0;
   left: 0;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=globals.css.map */

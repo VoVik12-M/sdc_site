@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%text_h1 {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fon {
+    background: url('/pro_nas.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 300px;
+    & p {
+        @extend %text_fon;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+    & p:nth-child(1) {
+        font-size: 45px;
+    }
+    & p:nth-child(2) {
+        font-size: 30px;
+    }
+    // width: 100%;
+    // height: 100vh;
+    // object-fit: cover;
+    // position: relative;
+    // top: 0;
+    // left: 0;
+}
+
+.opus {
+    border-top: 9px dashed red;
+    border-bottom: 9px dashed red;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px 50px 10px;
+    & h1 {
+        @extend %text_h1;
+        margin: 0;
+        & b {
+            @extend %text_fon;
+            font-weight: 100;
+        }
+    }
+}
