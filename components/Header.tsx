@@ -48,8 +48,8 @@ export default function Header ({setKnopka, knopka, setMeregi, meregi}: pageProp
                         <p>Стилі</p>
                     </Link>
                 </div>
-                <Link href='/'>
-                    <img className={styles.row_2} src="/Logotup.png" alt="" />
+                <Link className={styles.row_2} href='/'>
+                    <img src="/Logotup.png" alt="" />
                 </Link>
                 <div className={styles.row_3}>
                     <Link href='/price'>

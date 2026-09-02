@@ -41,7 +41,7 @@
         height: 80px;
         margin: 10px 0;
     }
-    & > div:last-of-type p:last-of-type {
+    & >div:last-of-type a:last-of-type p:last-of-type {
         border: none;
     }
 }
@@ -149,6 +149,7 @@
             "one three";
         justify-items: center;
         align-items: center;
+        height: 142px;
     }
     .row_3 {
         width: 280px;

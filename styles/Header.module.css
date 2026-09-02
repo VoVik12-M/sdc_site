@@ -40,7 +40,7 @@
   height: 80px;
   margin: 10px 0;
 }
-.Header > div:last-of-type p:last-of-type {
+.Header > div:last-of-type a:last-of-type p:last-of-type {
   border: none;
 }
 
@@ -141,6 +141,7 @@
     grid-template-areas: "two two  " "one three";
     justify-items: center;
     align-items: center;
+    height: 142px;
   }
   .row_3 {
     width: 280px;

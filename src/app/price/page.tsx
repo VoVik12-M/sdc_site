@@ -1,8 +1,12 @@
 "use client";
 
-import Header from "../../../components/Header"
+import Header from "../../../components/Header";
+import Social_media from "../../../components/Social_media";
+import Contactu from "../../../components/Contactu";
 
 import { useRef, useState, useEffect } from "react";
+
+import style from "./price.module.css";
 
 export default function Price() {
 
@@ -27,7 +31,22 @@ export default function Price() {
     return (
         <div>
             <Header setKnopka ={setKnopka} knopka = {knopka} setMeregi={setMeregi} meregi={meregi}/>
-            <p>Ціни</p>
+            <div className={style.fon}>
+                <p>Ціни на абонементи</p>
+            </div>
+            <div className={style.cina}>
+                <p>Прайс</p>
+                <div className={style.prices}>
+                    <span>
+                        <img src="./price/razove.png" alt="" />
+                    </span>
+                    <span>
+                        <img src="./price/Light.png" alt="" />
+                    </span>
+                </div>
+            </div>
+            {width > 680 ? <Social_media /> : '' }
+            <Contactu />
         </div>
     )
 }
