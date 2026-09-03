@@ -65,7 +65,9 @@ export default function Header ({setKnopka, knopka, setMeregi, meregi}: pageProp
             </div>
             <div className={styles.Header_Phone}>
                 <Social_media_phone setMeregi={setMeregi} meregi={meregi} setKnopka={setKnopka}/>
-                <img className={styles.row_2} src="/Logotup.png" alt="" />
+                <Link href='/'>
+                    <img className={styles.mini} src="/Logotup.png" alt="" />
+                </Link>
                 <div className={`${styles.hamMenu} ${knopka ? styles.active : ''}`} onClick={() => {
                     setKnopka(prev => !prev);
                     setMeregi(false);
@@ -75,12 +77,24 @@ export default function Header ({setKnopka, knopka, setMeregi, meregi}: pageProp
                     <span></span>
                 </div>
                 <nav className={`${styles.menu} ${knopka ? styles.menu_ef : ''}`}>
-                    <p>Про нас</p>
-                    <p>Педагоги</p>
-                    <p>Стилі</p>
-                    <p>Ціни</p>
-                    <p>Розклад</p>
-                    <p>Блог</p>
+                    <Link href='/pro-nas'>
+                        <p>Про нас</p>
+                    </Link>
+                    <Link href='/teacher'>
+                        <p>Педагоги</p>
+                    </Link>
+                    <Link href='/stuli'>
+                        <p>Стилі</p>
+                    </Link>
+                    <Link href='/price'>
+                        <p>Ціни</p>
+                    </Link>
+                    <Link href='/rozklad'>
+                        <p>Розклад</p>
+                    </Link>
+                    <Link href='/blogu'>
+                        <p>Блог</p>
+                    </Link>
                 </nav>
             </div>
         </div>

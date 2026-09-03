@@ -35,7 +35,6 @@ export default function Pronas () {
             {/* <img className="fon " src="/pro_nas.png" alt="" /> */}
             <div className={style.fon}>
                 <p>Про нас</p>
-                <p>Студія танців "Social dance club" м.Тернопіль</p>
             </div>
             <div className={style.opus}>
                 <h1>

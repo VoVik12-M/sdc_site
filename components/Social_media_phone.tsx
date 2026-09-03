@@ -40,6 +40,9 @@ export default function Social_media_phone ({setMeregi, meregi, setKnopka}: Phon
                 <a href="https://youtube.com/@sdcternopil?si=espXzRPDwWHHSbxY" target="_blank" rel="noopener noreferrer">
                     <img src="/youtube.png" alt="" />
                 </a>
+                <a href="https://www.facebook.com/sdcternopil" target="_blank" rel="noopener noreferrer">
+                    <img src="/facebook.png" alt="" />
+                </a>
             </div>
         </nav>
     )

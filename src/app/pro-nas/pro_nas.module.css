@@ -28,10 +28,7 @@
   margin: 0;
 }
 .fon p:nth-child(1) {
-  font-size: 45px;
-}
-.fon p:nth-child(2) {
-  font-size: 30px;
+  font-size: 65px;
 }
 
 .opus {

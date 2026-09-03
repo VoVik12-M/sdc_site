@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
-.cina > p, .fon p {
+@import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
+.prices span > div h3, .practuca span > div h3, .induvu span > div h3, .prices span > div div:nth-of-type(1) h5, .practuca span > div div:nth-of-type(1) h5, .induvu span > div div:nth-of-type(1) h5, .prices span > div div:nth-of-type(1) h2, .practuca span > div div:nth-of-type(1) h2, .induvu span > div div:nth-of-type(1) h2, .prices span > div p, .practuca span > div p, .induvu span > div p, .cina > p, .fon p {
   font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prices span > div h6, .practuca span > div h6, .induvu span > div h6 {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -18,8 +26,6 @@
   text-align: center;
   color: white;
   margin: 0;
-}
-.fon p:nth-child(1) {
   font-size: 45px;
 }
 
@@ -27,19 +33,76 @@
   border-top: 9px dashed red;
   border-bottom: 9px dashed red;
   box-sizing: border-box;
-  padding: 35px 0;
 }
 .cina > p {
   text-align: center;
-  font-size: 40px;
-  margin: 0;
+  font-size: 45px;
+  margin: 40px 0;
 }
 
-.prices {
+.prices, .practuca, .induvu {
   display: flex;
   flex-direction: column;
 }
-.prices span img {
+.prices span, .practuca span, .induvu span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+.prices span img, .practuca span img, .induvu span img {
   width: 250px;
   height: 250px;
+}
+.prices span > div, .practuca span > div, .induvu span > div {
+  margin: 0 0 0 30px;
+  width: 530px;
+}
+.prices span > div div:nth-of-type(1), .practuca span > div div:nth-of-type(1), .induvu span > div div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.prices span > div div:nth-of-type(1) h2, .practuca span > div div:nth-of-type(1) h2, .induvu span > div div:nth-of-type(1) h2 {
+  color: red;
+  margin: 0;
+}
+.prices span > div div:nth-of-type(1) h5, .practuca span > div div:nth-of-type(1) h5, .induvu span > div div:nth-of-type(1) h5 {
+  color: red;
+  margin: 9px 0 0 9px;
+}
+.prices span > div h3, .practuca span > div h3, .induvu span > div h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.prices span > div h6, .practuca span > div h6, .induvu span > div h6 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.prices span div:nth-of-type(1) p, .practuca span div:nth-of-type(1) p, .induvu span div:nth-of-type(1) p {
+  font-size: 30px;
+  margin: 0;
+}
+
+@media (max-width: 530px) {
+  .prices span > div, .practuca span > div, .induvu span > div {
+    margin: 0 20px;
+  }
+  .prices span > div p, .practuca span > div p, .induvu span > div p {
+    text-align: center;
+  }
+  .prices span > div div:nth-of-type(1), .practuca span > div div:nth-of-type(1), .induvu span > div div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+  }
+  .prices span > div h3, .practuca span > div h3, .induvu span > div h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 410px) {
+  .fon p,
+  .cina > p {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=price.module.css.map */

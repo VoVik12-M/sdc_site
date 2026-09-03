@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zagolovok {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    color: white;
+    & p {
+        @extend %text_fon;
+        margin: 0;
+        text-align: center;
+    }
+    & p:nth-child(1) {
+        font-size: 45px;
+    }
+    & p:nth-child(2) {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .zagolovok {
+        & p:nth-child(1) {
+            font-size: 35px;
+        }
+        & p:nth-child(2) {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 829px) {
+    .zagolovok {
+        & p:nth-child(1) {
+            font-size: 25px;
+        }
+        & p:nth-child(2) {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .zagolovok {
+        & p:nth-child(1) {
+            font-size: 20px;
+        }
+        & p:nth-child(2) {
+            font-size: 15px;
+        }
+    }
+}

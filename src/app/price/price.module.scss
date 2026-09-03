@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
 
 %text_fon {
     font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%text_h6 {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -19,8 +27,6 @@
         text-align: center;
         color: white;
         margin: 0;
-    }
-    & p:nth-child(1) {
         font-size: 45px;
     }
 }
@@ -29,30 +35,96 @@
     border-top: 9px dashed red;
     border-bottom: 9px dashed red;
     box-sizing: border-box;
-    padding: 35px 0;
     & >p {
         @extend %text_fon;
         text-align: center;
-        font-size: 40px;
-        margin: 0;
+        font-size: 45px;
+        margin: 40px 0;
     }
 }
 
-.prices {
+.prices, .practuca, .induvu {
     display: flex;
     flex-direction: column;
     & span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 25px 0;
+        flex-wrap: wrap;
         & img {
             width: 250px;
             height: 250px;
         }
+        & >div {
+            margin: 0 0 0 30px;
+            width: 530px;
+            & p {
+                @extend %text_fon;
+            }
+            & div:nth-of-type(1) {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 0;
+                & h2 {
+                    color: red;
+                    @extend %text_fon;
+                    margin: 0;
+                }
+                & h5 {
+                    color: red;
+                    @extend %text_fon;
+                    margin: 9px 0 0 9px;
+                }
+            }
+            & h3 {
+                @extend %text_fon;
+                font-size: 20px;
+                margin: 0;
+            }
+            & h6 {
+                @extend %text_h6;
+                font-size: 20px;
+                margin: 5px 0;
+            }
+        }
+        & div:nth-of-type(1) {
+            & p {
+                font-size: 30px;
+                margin: 0;
+            }
+            // & p:nth-child(2) {
+            //     color: red;
+            //     font-size: 20px;
+            //     margin: 10px 0;
+            // }
+        }
     }
 }
 
-// .fhoto {
-//     background: url('/razove.png');
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     box-sizing: border-box;
-// }
+// ______________________Верстка_____________________
+
+@media (max-width: 530px) {
+    .prices, .practuca, .induvu {
+        & span >div {
+            margin: 0 20px;
+            & p {
+                text-align: center;
+            }
+            & div:nth-of-type(1) {
+                display: flex;
+                justify-content: center;
+            }
+            & h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .fon p,
+    .cina >p {
+        font-size: 35px;
+    }
+}

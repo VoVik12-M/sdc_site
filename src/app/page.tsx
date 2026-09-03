@@ -35,6 +35,10 @@ export default function Home() {
     <div>
       <Header setKnopka ={setKnopka} knopka = {knopka} setMeregi={setMeregi} meregi={meregi}/>
       <video src="/video-fon.mp4" autoPlay muted loop ></video>
+      <div className={styles.zagolovok}>
+          <p>Студія танців "Social dance club" м.Тернопіль</p>
+          <p>Відкрийте для себе світ танцю вже сьогодні</p>
+      </div>
       {width > 680 ? <Social_media /> : '' }
       <Nowunu />
       <Youtube />

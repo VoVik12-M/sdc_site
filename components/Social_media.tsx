@@ -50,6 +50,9 @@ export default function Social_media () {
             <a href="https://youtube.com/@sdcternopil?si=espXzRPDwWHHSbxY" target="_blank" rel="noopener noreferrer">
                 <img className={`${styles.media} ${ramkaX ? styles.youtube : ""}`} src="/youtube.png" alt="" />
             </a>
+            <a href="https://www.facebook.com/sdcternopil" target="_blank" rel="noopener noreferrer">
+                <img className={`${styles.media} ${ramkaX ? styles.facebook : ""}`} src="/facebook.png" alt="" />
+            </a>
         </div>
     )
 }
