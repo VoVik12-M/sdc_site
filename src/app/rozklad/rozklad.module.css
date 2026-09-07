@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
+.kalendar > div span p, .fon p {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalendar > div div p {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fon {
+  background: url("/rozklad.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding-top: 350px;
+}
+.fon p {
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 55px;
+}
+
+.kalendar {
+  border-top: 9px dashed red;
+  border-bottom: 9px dashed red;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 10px 50px 10px;
+}
+.kalendar > div {
+  width: 290px;
+  margin: 10px 2px;
+}
+.kalendar > div span {
+  display: flex;
+}
+.kalendar > div span p {
+  margin: 10px;
+}
+.kalendar > div span:nth-child(1) {
+  background: red;
+  justify-content: center;
+}
+.kalendar > div span:nth-child(1) p {
+  color: white;
+}
+.kalendar > div div {
+  box-sizing: border-box;
+  padding: 20px 0;
+  margin: 4px 0;
+}
+.kalendar > div div p {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 20px;
+}
+.kalendar > div div p:nth-child(1) {
+  font-weight: 900;
+}
+
+.monday div:nth-of-type(1) {
+  background: #0bff0b;
+}
+.monday div:nth-of-type(2) {
+  background: #ff00b3;
+}
+
+.tuesday div:nth-of-type(1),
+.tuesday div:nth-of-type(2) {
+  background: #ff00b3;
+}
+
+.wednesday div:nth-of-type(1),
+.wednesday div:nth-of-type(3) {
+  background: #0bff0b;
+}
+.wednesday div:nth-of-type(2) {
+  background: yellow;
+}
+
+.thursday div:nth-of-type(1) {
+  background: #0bff0b;
+}
+.thursday div:nth-of-type(2) {
+  background: yellow;
+}
+
+.friday div:nth-of-type(1),
+.friday div:nth-of-type(3) {
+  background: #ff00b3;
+}
+.friday div:nth-of-type(2) {
+  background: yellow;
+}
+
+.saturday div:nth-of-type(1) {
+  background: #0bff0b;
+}
+.saturday div:nth-of-type(2) {
+  background: yellow;
+}
+.saturday div:nth-of-type(3) {
+  background: #ff00b3;
+}
+
+.sunday div:nth-of-type(1) {
+  background: #0bff0b;
+}
+.sunday div:nth-of-type(2) {
+  background: yellow;
+}/*# sourceMappingURL=rozklad.module.css.map */
