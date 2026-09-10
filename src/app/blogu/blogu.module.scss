@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fon {
+    background: url('/fon_blog.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 350px;
+    & p {
+        @extend %text_fon;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+    & p:nth-of-type(1) {
+        font-size: 55px;
+    }
+    & p:nth-of-type(2) {
+        font-size: 35px;
+    }
+}
+
+.blog {
+    border-top: 9px dashed red;
+    border-bottom: 9px dashed red;
+    box-sizing: border-box;
+    padding: 50px 8%;
+}
+
+.knopku {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & p {
+        margin: 0 2px;
+        border: 2px solid red;
+        width: 21px;
+        text-align: center;
+        padding: 2px 0 0 0;
+        height: 20.333px;
+    }
+    & p:hover {
+        background: red;
+        color: white;
+        cursor: pointer;
+    }
+    & p:first-child,
+    p:last-child {
+        padding: 1px;
+        border-radius: 16px;
+    }
+}
+
+.odun, .dva, .tru, .choturu, .piat, .shist{
+    background: red;
+    color: white;
+}
+
+.live, .prave {
+    display: none;
+}

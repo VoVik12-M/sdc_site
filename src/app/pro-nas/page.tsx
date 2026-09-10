@@ -32,7 +32,6 @@ export default function Pronas () {
     return (
         <div>
             <Header setKnopka ={setKnopka} knopka = {knopka} setMeregi={setMeregi} meregi={meregi}/>
-            {/* <img className="fon " src="/pro_nas.png" alt="" /> */}
             <div className={style.fon}>
                 <p>Про нас</p>
             </div>
