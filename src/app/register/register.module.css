@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+.container h1 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tilo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fff, #ff5a5a);
+}
+
+.container {
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.container h1 {
+  font-size: 36px;
+  margin: -10px 0;
+}
+
+.form_box {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: seagreen;
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-align: center;
+}
+
+.forma {
+  width: 100%;
+}
+
+.input_box {
+  position: relative;
+  margin: 30px 0;
+}
+.input_box input {
+  width: 100%;
+  padding: 13px;
+  background: #eee;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=register.module.css.map */

@@ -1,0 +1,32 @@
+.kab {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 35px;
+  animation: knopka 500ms ease-in-out infinite alternate 0s;
+}
+.kab img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.img_one {
+  margin: 21%;
+}
+
+.img_two {
+  margin: 20%;
+}
+
+@keyframes knopka {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}/*# sourceMappingURL=Kabinet.module.css.map */

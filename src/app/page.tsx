@@ -8,6 +8,7 @@ import Social_media from "../../components/Social_media";
 import Nowunu from "../../components/Nowunu";
 import Youtube from "../../components/Youtube";
 import Contactu from "../../components/Contactu";
+import Kabinet from "../../components/Kabinet";
 
 import { useRef, useState, useEffect } from "react";
 
@@ -40,6 +41,7 @@ export default function Home() {
           <p>Відкрийте для себе світ танцю вже сьогодні</p>
       </div>
       {width > 680 ? <Social_media /> : '' }
+      <Kabinet />
       <Nowunu />
       <Youtube />
       <Contactu />

@@ -27,14 +27,6 @@ export default function Blog() {
     const[meregi, setMeregi] = useState<boolean>(false);
 
     // ________________кнопки____________________________
-    const [livo, setLivo] = useState<boolean>(false);
-    const [one, setOne] = useState<boolean>(true);
-    const [two, seTwo] = useState<boolean>(true);
-    const [three, setThree] = useState<boolean>(true);
-    const [four, setFour] = useState<boolean>(true);
-    const [five, setFive] = useState<boolean>(true);
-    const [six, setSix] = useState<boolean>(true);
-    const [pravo, setPravo] = useState<boolean>(true);
 
     const [cnopka, setCnopka] = useState<number>(1);
     // __________________________________________________
