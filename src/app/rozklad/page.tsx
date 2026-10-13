@@ -3,6 +3,7 @@
 import Header from "../../../components/Header"
 import Social_media from "../../../components/Social_media";
 import Contactu from "../../../components/Contactu";
+import Kabinet from "../../../components/Kabinet";
 
 import { useRef, useState, useEffect } from "react";
 
@@ -191,6 +192,7 @@ export default function Rozklad () {
                     </div>
                 </div>
             </div>
+            <Kabinet />
             <Contactu />
         </div>
     )

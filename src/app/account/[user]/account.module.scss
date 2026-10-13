@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tilo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #fff, #ff5a5a);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 78px;
+    background: white;
+    height: 100px;
+    margin: 0px 6.1%;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    box-sizing: border-box;
+    padding: 0 55px 0 120px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    & div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & span {
+            display: flex;
+            flex-direction: row;
+            & p {
+                @extend %text_fon;
+                font-size: 30px;
+                margin: 0;
+                color: red;
+            }
+            & p:nth-of-type(1) {
+                margin: 0 10px 0 0;
+            }
+            & img {
+                width: 45px;
+                height: 45px;
+            }
+            & img:hover {
+                opacity: 0.4;
+            }
+        }
+        & span:nth-of-type(1) {
+            box-sizing: border-box;
+            padding: 50px 0 0 0;
+        }
+        & span:nth-of-type(2) {
+            box-sizing: border-box;
+            padding: 25px 0 0 0;
+        }      
+    }
+}
+
+.house {
+    margin: 0 25px 0 0;
+}
+
+// _____________________мобільна версія header__________________________
+
+.headermobile {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    padding: 5px;
+    & span {
+        display: flex;
+        margin: 8px 0 0 8px;
+        & p {
+            @extend %text_fon;
+            color: red;
+            margin: 0;
+        }
+        & p:first-child {
+            margin: 0 5px 0 0;
+        }
+    }
+}
+// _______________________________________________________________
+
+.navigation {
+    display: flex;
+    margin: 180px 0 0 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    & div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        & span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 100px;
+            margin: 5px;
+            background: red;
+            & p {
+                display: flex;
+                text-align: center;
+                color: white;
+                margin: 0;
+                @extend %text_fon;
+            }
+            &:hover {
+                background: #ff00007d;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.pole_exid {
+    display: none;
+    flex-direction: row;
+    margin: 5px 0;
+    justify-content: center;
+    & a {
+        display: flex;
+        width: 100%;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: red;
+            margin: 0 10px;
+            height: 75px;
+            width: 100%;
+            & img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}
+
+.pole {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+// _____________________________Верстка___________________________
+@media screen and (max-width: 1380px) {
+    .navigation div span {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation div {
+        width: 50%;
+        & span {
+            width: 100%;
+            margin: 5px 10px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        margin: 0;
+        border-radius: 0;
+        padding: 0 10px;
+        grid-template-columns: 110px 1fr;
+        & img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        display: none;
+    }
+    .headermobile {
+        display: flex;
+    }
+    .navigation {
+        margin: 60px 0 0 0;
+        & div {
+            width: 100%;
+        }
+    }
+    .pole_exid {
+        display: flex;
+    }
+}
+

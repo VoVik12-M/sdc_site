@@ -1,0 +1,18 @@
+.tilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #fff, #ff5a5a);
+    & span {
+        display: flex;
+        width: 1000px;
+        height: 500px;
+        backdrop-filter: blur(21px);
+        background: #fff;
+        border: 5px solid #ff0101;
+        border-radius: 12px;
+    }
+}

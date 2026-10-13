@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+.navigation div span p, .headermobile span p, .header div span p {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tilo {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fff, #ff5a5a);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 78px;
+  background: white;
+  height: 100px;
+  margin: 0px 6.1%;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  box-sizing: border-box;
+  padding: 0 55px 0 120px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header div span {
+  display: flex;
+  flex-direction: row;
+}
+.header div span p {
+  font-size: 30px;
+  margin: 0;
+  color: red;
+}
+.header div span p:nth-of-type(1) {
+  margin: 0 10px 0 0;
+}
+.header div span img {
+  width: 45px;
+  height: 45px;
+}
+.header div span img:hover {
+  opacity: 0.4;
+}
+.header div span:nth-of-type(1) {
+  box-sizing: border-box;
+  padding: 50px 0 0 0;
+}
+.header div span:nth-of-type(2) {
+  box-sizing: border-box;
+  padding: 25px 0 0 0;
+}
+
+.house {
+  margin: 0 25px 0 0;
+}
+
+.headermobile {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.headermobile span {
+  display: flex;
+  margin: 8px 0 0 8px;
+}
+.headermobile span p {
+  color: red;
+  margin: 0;
+}
+.headermobile span p:first-child {
+  margin: 0 5px 0 0;
+}
+
+.navigation {
+  display: flex;
+  margin: 180px 0 0 0;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navigation div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navigation div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 100px;
+  margin: 5px;
+  background: red;
+}
+.navigation div span p {
+  display: flex;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+.navigation div span:hover {
+  background: rgba(255, 0, 0, 0.4901960784);
+  cursor: pointer;
+}
+
+.pole_exid {
+  display: none;
+  flex-direction: row;
+  margin: 5px 0;
+  justify-content: center;
+}
+.pole_exid a {
+  display: flex;
+  width: 100%;
+}
+.pole_exid a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  margin: 0 10px;
+  height: 75px;
+  width: 100%;
+}
+.pole_exid a span img {
+  width: 45px;
+  height: 45px;
+}
+
+.pole {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1380px) {
+  .navigation div span {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navigation div {
+    width: 50%;
+  }
+  .navigation div span {
+    width: 100%;
+    margin: 5px 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .header {
+    margin: 0;
+    border-radius: 0;
+    padding: 0 10px;
+    grid-template-columns: 110px 1fr;
+  }
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    display: none;
+  }
+  .headermobile {
+    display: flex;
+  }
+  .navigation {
+    margin: 60px 0 0 0;
+  }
+  .navigation div {
+    width: 100%;
+  }
+  .pole_exid {
+    display: flex;
+  }
+}/*# sourceMappingURL=account.module.css.map */

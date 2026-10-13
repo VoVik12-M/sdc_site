@@ -3,6 +3,7 @@
 import Header from "../../../components/Header";
 import Social_media from "../../../components/Social_media";
 import Contactu from "../../../components/Contactu";
+import Kabinet from "../../../components/Kabinet";
 
 import { useRef, useState, useEffect } from "react";
 
@@ -160,6 +161,7 @@ export default function Price() {
                 </div>
             </div>
             {width > 680 ? <Social_media /> : '' }
+            <Kabinet />
             <Contactu />
         </div>
     )

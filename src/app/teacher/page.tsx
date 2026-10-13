@@ -3,6 +3,7 @@
 import Header from "../../../components/Header";
 import Social_media from "../../../components/Social_media";
 import Contactu from "../../../components/Contactu";
+import Kabinet from "../../../components/Kabinet";
 
 import style from "./teacher.module.css"
 
@@ -108,6 +109,7 @@ export default function Teacher () {
                 </span>
             </div>
             {width > 680 ? <Social_media /> : '' }
+            <Kabinet />
             <Contactu />
         </div>
     )

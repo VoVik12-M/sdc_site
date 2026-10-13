@@ -3,6 +3,7 @@
 import Header from "../../../components/Header";
 import Social_media from "../../../components/Social_media";
 import Contactu from "../../../components/Contactu";
+import Kabinet from "../../../components/Kabinet";
 
 import style from "./stuli.module.css"
 
@@ -174,6 +175,7 @@ export default function Stuli() {
                     </div>
                 </span>
             </div>
+            <Kabinet />
             <Contactu />
         </div>
 

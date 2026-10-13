@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
+.reqwizutu span p, .mobile div span p, .pc, .historyabon, .historytrein, .tarufu span p, .abonement span p {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kod {
+  width: 400px;
+  height: 400px;
+}
+
+@media screen and (max-width: 420px) {
+  .kod {
+    width: 100%;
+    height: 100%;
+  }
+}
+.abonement {
+  display: flex;
+  flex-direction: row;
+}
+.abonement span p {
+  font-size: 28px;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.abonement span:nth-of-type(1) p {
+  background: red;
+  color: white;
+}
+.abonement span:nth-of-type(2) p {
+  background: white;
+}
+
+@media screen and (max-width: 508px) {
+  .abonement span p {
+    font-size: clamp(5px, 4.6vw, 28px);
+  }
+}
+.tarufu span {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 25px;
+}
+.tarufu span p {
+  font-size: 20px;
+  margin: 0;
+}
+.tarufu span p:nth-of-type(1),
+.tarufu span p:nth-of-type(8) {
+  font-weight: 900;
+  margin: 0 0 20px 0;
+}
+.tarufu span p:nth-of-type(7),
+.tarufu span p:nth-of-type(12) {
+  margin: 20px 0 0 0;
+}
+.tarufu span p:nth-of-type(13),
+.tarufu span p:nth-of-type(15) {
+  margin: 0 0 20px 0;
+}
+.tarufu span p:nth-of-type(16) {
+  font-weight: 900;
+}
+
+.historytrein {
+  display: flex;
+  flex-direction: column;
+  border: 5px groove gray;
+  width: 1360px;
+  min-width: 300px;
+  justify-content: center;
+}
+.historytrein div {
+  display: flex;
+  flex-direction: row;
+}
+.historytrein div h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  height: 52px;
+  text-align: center;
+  background: red;
+}
+.historytrein div h6:nth-child(1) {
+  width: 130px;
+  min-width: 130px;
+}
+.historytrein div h6:nth-child(2) {
+  width: 85px;
+  min-width: 85px;
+}
+.historytrein div h6:nth-child(3) {
+  width: 579.817;
+}
+.historytrein div h6:nth-child(4) {
+  width: 579.833;
+}
+.historytrein span {
+  display: flex;
+  flex-direction: row;
+}
+.historytrein span p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2px 0;
+  font-size: 20px;
+  background: #e1e1e1;
+}
+.historytrein span p:nth-child(1) {
+  width: 130px;
+  min-width: 130px;
+}
+.historytrein span p:nth-child(2) {
+  width: 85px;
+  min-width: 85px;
+}
+.historytrein span p:nth-child(3) {
+  width: 579.817;
+}
+.historytrein span p:nth-child(4) {
+  width: 579.833;
+}
+
+@media screen and (max-width: 650px) {
+  .historytrein {
+    border: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .historytrein div h6 {
+    font-size: 14px;
+  }
+  .historytrein div h6:nth-child(1) {
+    min-width: 90px;
+  }
+  .historytrein div h6:nth-child(2) {
+    min-width: 60px;
+  }
+  .historytrein span p {
+    font-size: clamp(10px, 3vw, 20px);
+  }
+  .historytrein span p:nth-child(1) {
+    min-width: 90px;
+  }
+  .historytrein span p:nth-child(2) {
+    min-width: 60px;
+  }
+}
+.historyabon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1360px;
+  min-width: 300px;
+}
+
+.pc {
+  display: flex;
+  flex-direction: column;
+  border: 5px groove gray;
+  justify-content: center;
+}
+.pc div {
+  display: flex;
+  flex-direction: row;
+}
+.pc div h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  height: 52px;
+  text-align: center;
+  background: red;
+}
+.pc div h6:nth-child(1) {
+  width: 130px;
+  min-width: 130px;
+}
+.pc div h6:nth-child(2) {
+  width: 75px;
+  min-width: 75px;
+}
+.pc div h6:nth-child(3) {
+  width: 100%;
+}
+.pc div h6:nth-child(4) {
+  width: 100%;
+}
+.pc div h6:nth-child(5) {
+  width: 90px;
+  min-width: 90px;
+}
+.pc div h6:nth-child(6) {
+  width: 125px;
+  min-width: 125px;
+}
+.pc span {
+  display: flex;
+  flex-direction: row;
+}
+.pc span p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2px 0;
+  font-size: 20px;
+  background: #e1e1e1;
+}
+.pc span p:nth-child(1) {
+  width: 130px;
+  min-width: 130px;
+}
+.pc span p:nth-child(2) {
+  width: 75px;
+  min-width: 75px;
+}
+.pc span p:nth-child(3) {
+  width: 100%;
+}
+.pc span p:nth-child(4) {
+  width: 100%;
+}
+.pc span p:nth-child(5) {
+  width: 90px;
+  min-width: 90px;
+}
+.pc span p:nth-child(6) {
+  width: 125px;
+  min-width: 125px;
+}
+
+.mobile {
+  display: none;
+  flex-direction: column;
+}
+.mobile div {
+  display: flex;
+  flex-direction: row;
+}
+.mobile div span {
+  width: 100%;
+}
+.mobile div span p {
+  font-size: 28px;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.mobile div span:nth-of-type(1) {
+  min-width: 283px;
+}
+.mobile div span:nth-of-type(1) p {
+  background: red;
+  color: white;
+}
+.mobile div span:nth-of-type(2) p {
+  background: white;
+}
+
+@media screen and (max-width: 730px) {
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+}
+@media screen and (max-width: 508px) {
+  .mobile div span p {
+    font-size: clamp(5px, 4.6vw, 28px);
+  }
+  .mobile div span:nth-of-type(1) {
+    min-width: 212px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .mobile div span:nth-of-type(1) {
+    min-width: 180px;
+  }
+}
+.reqwizutu span {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 10px 0;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 10px;
+}
+.reqwizutu span p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .reqwizutu {
+    width: 100%;
+  }
+  .reqwizutu span:nth-of-type(2) p:last-child {
+    font-size: clamp(5px, 4.8vw, 20px);
+  }
+}/*# sourceMappingURL=users.module.css.map */

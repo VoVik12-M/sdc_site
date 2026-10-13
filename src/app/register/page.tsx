@@ -4,7 +4,7 @@ import style from "./register.module.css";
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 
-export default function register() {
+export default function Register() {
 
     const[activ, setActiv] = useState<boolean>(false);
 
@@ -38,10 +38,6 @@ export default function register() {
                         </div>
                         <div className={style.input_box}>
                             <input type="text" placeholder="Ім'я" required/>
-                            <img src="./user.png" alt="" />
-                        </div>
-                        <div className={style.input_box}>
-                            <input type="text" placeholder="По-батькові" required/>
                             <img src="./user.png" alt="" />
                         </div>
                         <div className={style.input_box}>

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%text_p {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// ________________QR Код____________________
+.kod {
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 420px) {
+    .kod {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// ____________________Діючі абонементи__________
+
+.abonement {
+    display: flex;
+    flex-direction: row;
+    & span {
+        & p {
+            font-size: 28px;
+            @extend %text_p;
+            padding: 10px;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+    }
+    & span:nth-of-type(1) {
+        & p {
+            background: red;
+            color: white;
+        }
+    }
+    & span:nth-of-type(2) {
+        & p {
+            background: white;
+        }
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .abonement span p {
+        font-size: clamp(5px, 4.6vw, 28px);
+    }
+}
+
+// ___________________Тарифи_____________________
+
+.tarufu {
+    & span {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 25px;
+        & p {
+            @extend %text_p;
+            font-size: 20px;
+            margin: 0;
+        }
+        & p:nth-of-type(1),
+        p:nth-of-type(8) {
+            font-weight: 900;
+            margin: 0 0 20px 0;
+        }
+        & p:nth-of-type(7),
+        p:nth-of-type(12) {
+            margin: 20px 0 0 0;
+        }
+        & p:nth-of-type(13),
+        p:nth-of-type(15) {
+            margin: 0 0 20px 0;
+        }
+        & p:nth-of-type(16) {
+            font-weight: 900;
+        }
+    }
+}
+
+// _________________Історія Тренування_______
+
+.historytrein {
+    display: flex;
+    flex-direction: column;
+    border: 5px groove gray;
+    width: 1360px;
+    min-width: 300px;
+    justify-content: center;
+    @extend %text_p;
+    & div {
+        display: flex;
+        flex-direction: row;
+        & h6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0;
+            font-size: 20px;
+            height: 52px;
+            text-align: center;
+            background: red;
+        }
+        & h6:nth-child(1) {
+            width: 130px;
+            min-width: 130px;
+        }
+        & h6:nth-child(2) {
+            width: 85px;
+            min-width: 85px;
+        }
+        & h6:nth-child(3) {
+            width: 579.817;
+        }
+        & h6:nth-child(4) {
+            width: 579.833;
+        }
+    }
+    & span {
+        display: flex;
+        flex-direction: row;
+        & p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 2px 0;
+            font-size: 20px;
+            background: #e1e1e1;;
+        }
+        & p:nth-child(1) {
+            width: 130px;
+            min-width: 130px;
+        }
+        & p:nth-child(2) {
+            width: 85px;
+            min-width: 85px;
+        }
+        & p:nth-child(3) {
+            width: 579.817;
+        }
+        & p:nth-child(4) {
+            width: 579.833;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .historytrein {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .historytrein {
+        & div {
+            & h6 {
+                font-size: 14px;
+            }
+            & h6:nth-child(1) {
+                min-width: 90px;
+            }
+            & h6:nth-child(2) {
+                min-width: 60px;
+            }
+        }
+        & span {
+            & p {
+                font-size: clamp(10px, 3vw, 20px)
+            }
+            & p:nth-child(1) {
+                min-width: 90px;
+            }
+            & p:nth-child(2) {
+                min-width: 60px;
+            }
+        }
+    }
+}
+
+// _______________Історія абонементів_________
+
+.historyabon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1360px;
+    min-width: 300px;
+    @extend %text_p;
+}
+
+.pc {
+    display: flex;
+    flex-direction: column;
+    border: 5px groove gray;
+    justify-content: center;
+    @extend %text_p;
+    & div {
+        display: flex;
+        flex-direction: row;
+        & h6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0;
+            font-size: 20px;
+            height: 52px;
+            text-align: center;
+            background: red;
+        }
+        & h6:nth-child(1) {
+            width: 130px;
+            min-width: 130px;
+        }
+        & h6:nth-child(2) {
+            width: 75px;
+            min-width: 75px;
+        }
+        & h6:nth-child(3) {
+            width: 100%;
+        }
+        & h6:nth-child(4) {
+            width: 100%;
+        }
+        & h6:nth-child(5) {
+            width: 90px;
+            min-width: 90px;
+        }
+        & h6:nth-child(6) {
+            width: 125px;
+            min-width: 125px;
+        }
+    }
+    & span {
+        display: flex;
+        flex-direction: row;
+        & p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 2px 0;
+            font-size: 20px;
+            background: #e1e1e1;;
+        }
+        & p:nth-child(1) {
+            width: 130px;
+            min-width: 130px;
+        }
+        & p:nth-child(2) {
+            width: 75px;
+            min-width: 75px;
+        }
+        & p:nth-child(3) {
+            width: 100%;
+        }
+        & p:nth-child(4) {
+            width: 100%;
+        }
+        & p:nth-child(5) {
+            width: 90px;
+            min-width: 90px;
+        }
+        & p:nth-child(6) {
+            width: 125px;
+            min-width: 125px;
+        }
+    }
+}
+
+.mobile {
+    display: none;
+    flex-direction: column;
+    & div {
+        display: flex;
+        flex-direction: row;
+        & span {
+            width: 100%;
+            & p {
+                font-size: 28px;
+                @extend %text_p;
+                padding: 10px;
+                margin: 5px;
+                box-sizing: border-box;
+            }
+        }
+        & span:nth-of-type(1) {
+            min-width: 283px;
+            & p {
+                background: red;
+                color: white;
+            }
+        }
+        & span:nth-of-type(2) {
+            & p {
+                background: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .mobile div span p {
+        font-size: clamp(5px, 4.6vw, 28px);
+    }
+    .mobile div {
+        & span:nth-of-type(1) {
+            min-width: 212px;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .mobile div {
+        & span:nth-of-type(1) {
+            min-width: 180px;
+        }
+    }
+}
+
+// _______________Реквізити___________________
+
+.reqwizutu {
+    & span {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+        & p {
+            margin: 5px 0;
+            @extend %text_p;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .reqwizutu {
+        width: 100%;
+        & span:nth-of-type(2) p:last-child {
+            font-size: clamp(5px, 4.8vw, 20px);
+        }
+    }
+}
