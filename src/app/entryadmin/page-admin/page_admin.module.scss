@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%text_p {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pc {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    background: #f0f0f0;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    & img {
+        display: block;
+        width: 35px;
+        margin: 2px 0 0 8px;
+    }
+    & h4 {
+        margin: 9px;
+        @extend %text_fon;
+    }
+}
+
+.navigatia {
+    display: flex;
+    flex-direction: row;
+    & aside {
+        background: red;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 40px 0 0 0;
+        height: 100vh;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: red transparent;
+        &:hover {
+            scrollbar-color: #da1212 transparent;
+            transition-duration: .5s;
+        }
+        & span {
+            display: flex;
+            flex-direction: column;
+            & p {
+                margin: 10px 0 0 40px;
+                @extend %text_p;
+                font-size: 24px;
+                color: white;
+                &:hover {
+                    cursor: pointer;
+                    transition-duration: .3s;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+        & h3 {
+            @extend %text_fon;
+            margin: 16px 0 0 15px;
+            color: white;
+        }
+    }
+    & main {
+        // background: #30a2a2;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: white transparent;
+        &:hover {
+            scrollbar-color: #da1212 transparent;
+            transition-duration: .5s;
+        }
+    }
+}
+
+// _________________Statistic_____________________
+
+.stat {
+    box-sizing: border-box;
+    padding: 50px 100px 0;
+    & span {
+        display: block;
+        margin: 30px ;
+        & h3 {
+            margin: 0 0 7px 0;
+            @extend %text_fon;
+            font-size: 24px;
+        }
+        & div {
+            display: flex;
+            flex-direction: row;
+            & p {
+                margin: 0;
+                @extend %text_p;
+                font-size: 22px;
+            }
+            & p:nth-of-type(2) {
+                background: black;
+                width: 15px;
+                height: 2px;
+                margin-top: 14px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+    & span:nth-of-type(1),
+    span:nth-of-type(3),
+    span:nth-of-type(5) {
+        border-bottom: 3px solid red;
+        display: block;
+    }
+}

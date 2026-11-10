@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
+.stat span h3, .navigatia aside h3, .head h4 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stat span div p, .navigatia aside span p {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pc {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  background: #f0f0f0;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+}
+.head img {
+  display: block;
+  width: 35px;
+  margin: 2px 0 0 8px;
+}
+.head h4 {
+  margin: 9px;
+}
+
+.navigatia {
+  display: flex;
+  flex-direction: row;
+}
+.navigatia aside {
+  background: red;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40px 0 0 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: red transparent;
+}
+.navigatia aside:hover {
+  scrollbar-color: #da1212 transparent;
+  transition-duration: 0.5s;
+}
+.navigatia aside span {
+  display: flex;
+  flex-direction: column;
+}
+.navigatia aside span p {
+  margin: 10px 0 0 40px;
+  font-size: 24px;
+  color: white;
+}
+.navigatia aside span p:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  text-decoration-line: underline;
+}
+.navigatia aside h3 {
+  margin: 16px 0 0 15px;
+  color: white;
+}
+.navigatia main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+}
+.navigatia main:hover {
+  scrollbar-color: #da1212 transparent;
+  transition-duration: 0.5s;
+}
+
+.stat {
+  box-sizing: border-box;
+  padding: 50px 100px 0;
+}
+.stat span {
+  display: block;
+  margin: 30px;
+}
+.stat span h3 {
+  margin: 0 0 7px 0;
+  font-size: 24px;
+}
+.stat span div {
+  display: flex;
+  flex-direction: row;
+}
+.stat span div p {
+  margin: 0;
+  font-size: 22px;
+}
+.stat span div p:nth-of-type(2) {
+  background: black;
+  width: 15px;
+  height: 2px;
+  margin-top: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.stat span:nth-of-type(1),
+.stat span:nth-of-type(3),
+.stat span:nth-of-type(5) {
+  border-bottom: 3px solid red;
+  display: block;
+}/*# sourceMappingURL=page_admin.module.css.map */

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+%text_fon {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%text_label {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .tilo {
     display: flex;
     flex-direction: column;
@@ -6,13 +22,109 @@
     box-sizing: border-box;
     min-height: 100vh;
     background: linear-gradient(90deg, #fff, #ff5a5a);
-    & span {
+    padding: 0 15px;
+    & form {
         display: flex;
-        width: 1000px;
-        height: 500px;
+        flex-direction: column;
+        width: 500px;
+        height: 350px;
         backdrop-filter: blur(21px);
         background: #fff;
         border: 5px solid #ff0101;
         border-radius: 12px;
+        & div:nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            box-sizing: border-box;
+            padding: 4px;
+            & a {
+                height: 30px;
+                & img {
+                    background: red;
+                    box-sizing: border-box;
+                    padding: 4px;
+                    width: 30px;
+                    border-radius: 9px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #ff00009e;
+                    }
+                    &:active {
+                        background: rgb(194, 0, 0);
+                    }
+                }
+            }
+        }
+        & h1 {
+            @extend %text_fon;
+            font-size: 16px;
+            text-align: center;
+            margin: 5px;
+        }
+        & div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 10px;
+            & span {
+                position: relative;
+                width: 410px;
+                margin: 20px 0;
+                border-bottom: 3px solid black;
+                & input {
+                    width: 100%;
+                    height: 40px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    padding: 0 8px 0 5px
+                }
+                & label {
+                    @extend %text_label;
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    transform: translateY(-50%);
+                    color: black;
+                    pointer-events: none;
+                    transition: .5s;
+                }
+            }
+            & span input:focus~label, 
+            span input:valid~label {
+                top: -5px
+            }
+        }
+        & button {
+            @extend %text_fon;
+            margin: 15px 20px;
+            color: white;
+            border: none;
+            background: red;
+            height: 35px;
+            border-radius: 18px;
+            cursor: pointer;
+            &:hover {
+                background: #ff00009e;
+            }
+            &:active {
+                background: rgb(194, 0, 0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .tilo form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .tilo form div:nth-child(3) span {
+        width: 100%;
     }
 }
